@@ -6,8 +6,11 @@ Every 30 seconds, the run loop will scan for new error files, parse them and
 email a summary message to the email address specified.  The entire error pickle
 is not emailed.  The reason is for safety of potentially sensitive information.
 No form data should EVER be emailed because it could contain passwords, PII
-or credit card information.  Proceed with caution.  Consider yourself warned.  I
-will assume no risk for data leakage from your use of this software.
+or credit card information.  Proceed with caution.  There is still a chance private
+information could be sent in the clear.  If that is the case, perhaps consider
+modifying the script or delivering the mail to an @localhost address and pop the mail
+from there securely.  Consider yourself warned.  I will assume no risk for data leakage 
+from your use of this software.
 
 
 IMPORTANT:  You will need to either copy/link the Web2Py gluon directory to the working directory
